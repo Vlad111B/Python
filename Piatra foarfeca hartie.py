@@ -56,15 +56,15 @@ input_frame.pack()
 player_options = Label(input_frame, text="Optiunile tale : ", font=app_font, fg='black', bg='#FFE873')
 player_options.grid(row=0, column=0, pady=8)
 
-rock_btn = Button(input_frame, text='Piatra', width=15, bd=0, bg='#1560bd', pady=5,
+rock_btn = Button(input_frame, text='Piatra', width=15, bd=5, bg='#1560bd', pady=5,
                   command=lambda: player_choice(options[0]))
 rock_btn.grid(row=1, column=1, padx=8, pady=5)
 
-paper_btn = Button(input_frame, text='Hartie', width=15, bd=0, bg='gold', pady=5,
+paper_btn = Button(input_frame, text='Hartie', width=15, bd=5, bg='gold', pady=5,
                    command=lambda: player_choice(options[1]))
 paper_btn.grid(row=1, column=2, padx=8, pady=5)
 
-scissors_btn = Button(input_frame, text='Foarfeca', width=15, bd=0, bg='red', pady=5,
+scissors_btn = Button(input_frame, text='Foarfeca', width=15, bd=5, bg='red', pady=5,
                       command=lambda: player_choice(options[2]))
 scissors_btn.grid(row=1, column=3, padx=8, pady=5)
 
